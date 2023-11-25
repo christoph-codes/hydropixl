@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 export function useDimensions() {
-	const [width, setWidth] = useState(0);
-	const [height, setHeight] = useState(0);
+	const [width, setWidth] = useState<number>();
+	const [height, setHeight] = useState<number>();
 	const updateDimensions = () => {
 		setWidth(window.innerWidth);
 		setHeight(window.innerHeight);
@@ -13,7 +13,7 @@ export function useDimensions() {
 			window && window.removeEventListener("resize", updateDimensions);
 	}, []);
 
-	const size = width < 800 ? "mobile" : "desktop";
+	const size = width && width < 800 ? "mobile" : "desktop";
 
 	return { size, width, height };
 }
