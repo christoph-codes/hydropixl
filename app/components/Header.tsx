@@ -1,8 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { Box, Button, Container, Flex, Popover, Text } from "@radix-ui/themes";
+import { Box, Button, Container, Flex } from "@radix-ui/themes";
 import { Link, useLocation } from "@remix-run/react";
 import { navLinks } from "utils/navLinks";
 import { useDimensions } from "~/hooks/useDimensions";
+import Dropdown from "./Dropdown";
 
 const Header = () => {
 	const location = useLocation();
@@ -25,7 +26,7 @@ const Header = () => {
 									key={link.href}
 									to={link.href}
 									className={`font-bold py-2 px-4 text-black hover:text-tertiary transition-colors ${
-										location.pathname === link.href && "text-tertiary"
+										location.pathname === link.href && "text-secondary"
 									} ${
 										link.cta &&
 										`rounded-md bg-tertiary hover:bg-secondary text-black hover:text-black px-8 ${
@@ -36,27 +37,7 @@ const Header = () => {
 									{link.label}
 								</Link>
 							) : (
-								<Popover.Root>
-									<Popover.Trigger>
-										<Text className="font-bold py-2 px-4 cursor-pointer hover:text-tertiary focus:text-tertiary transition-colors">
-											{link.label}
-										</Text>
-									</Popover.Trigger>
-									<Popover.Content style={{ width: 360 }}>
-										<Flex direction="column" gap="4">
-											{link.children &&
-												link.children.map((item) => {
-													return (
-														item.href && (
-															<Link key={item.href} to={item.href}>
-																<Text className="font-bold">{item.label}</Text>
-															</Link>
-														)
-													);
-												})}
-										</Flex>
-									</Popover.Content>
-								</Popover.Root>
+								<Dropdown triggerLabel={link.label} links={link.children} />
 							);
 						})}
 					</Flex>
