@@ -1,5 +1,5 @@
 import { Heading, Text } from "@radix-ui/themes";
-import PageLayout from "~/PageLayout/PageLayout";
+import PageLayout from "~/templates/PageLayout";
 
 const Ready = () => {
 	return (
