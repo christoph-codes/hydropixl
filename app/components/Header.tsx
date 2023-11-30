@@ -46,14 +46,14 @@ const Header = () => {
 						align="center"
 						hidden={deviceWidth.size === "desktop"}
 					>
-						<Button className="p-4 cursor-pointer bg-transparent">
+						<Button className="p-4 cursor-pointer bg-transparent text-primary">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
 								viewBox="0 0 24 24"
 								strokeWidth={1.5}
 								stroke="currentColor"
-								className="w-6 h-6"
+								className="w-10 h-10"
 							>
 								<path
 									strokeLinecap="round"
