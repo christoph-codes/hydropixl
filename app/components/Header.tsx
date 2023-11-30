@@ -26,7 +26,7 @@ const Header = () => {
 									key={link.href}
 									to={link.href}
 									className={`font-bold py-2 px-4 text-black hover:text-tertiary transition-colors ${
-										location.pathname === link.href && "text-secondary"
+										location.pathname === link.href && "text-primary"
 									} ${
 										link.cta &&
 										`rounded-md bg-tertiary hover:bg-secondary text-black hover:text-black px-8 ${
