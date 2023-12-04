@@ -13,7 +13,9 @@ const Header = () => {
 		<Box py="4" className="shadow-lg">
 			<Container size="4" className="px-4 md:px-0">
 				<Flex justify="between" align="center">
-					<img src="/logo.svg" alt="HydroPixl logo" />
+					<Link to="/">
+						<img src="/logo.svg" alt="HydroPixl logo" />
+					</Link>
 					<Flex
 						gap="4"
 						display="inline-flex"
