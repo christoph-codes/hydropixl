@@ -25,7 +25,7 @@ const Header = () => {
 								<Link
 									key={link.href}
 									to={link.href}
-									className={`font-bold py-2 px-4 text-black hover:text-tertiary transition-colors ${
+									className={`font-bold py-2 px-4 text-black hover:text-tertiary transition-colors text-center ${
 										location.pathname === link.href && "text-primary"
 									} ${
 										link.cta &&
@@ -46,7 +46,7 @@ const Header = () => {
 						align="center"
 						hidden={deviceWidth.size === "desktop"}
 					>
-						<Button className="p-4 cursor-pointer bg-transparent text-primary">
+						<Button className="p-4 pr-0 cursor-pointer bg-transparent text-primary">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"

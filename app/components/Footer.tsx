@@ -24,8 +24,9 @@ const Footer = () => {
 									)
 							)}
 						</nav>
-						<p className="text-center sm:text-right text-md">
-							Copyright © 2023. HydroPixl. All RIghts Reserved.
+						<p className="text-center sm:text-right text-md leading-5 mt-3">
+							Copyright © 2023. HydroPixl. <br className="block sm:hidden" />{" "}
+							All RIghts Reserved.
 						</p>
 					</div>
 				</Flex>
