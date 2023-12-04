@@ -11,6 +11,9 @@ export default {
 				gray: "#646464",
 				lightGray: "#D9D9D9",
 			},
+			backgroundImage: {
+				"home-hero": "url('/home_hero.png')",
+			},
 		},
 	},
 	plugins: [],
