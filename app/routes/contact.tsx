@@ -25,7 +25,7 @@ export default function About() {
 				description="We're thrilled that you're considering HydroPixl for your landscaping and irrigation needs. Whether you're a homeowner with a vision or a professional seeking expert advice, we're here to assist you."
 			/>
 			<Section className="min-h-96 items-center">
-				<Flex className="mx-auto justify-centeritems-center flex-col sm:flex-row gap-20 mb-6">
+				<Flex className="mx-auto justify-centeritems-center flex-col md:flex-row gap-20 mb-6">
 					<img
 						className="object-cover rounded-md w-full md:w-1/2 "
 						src="/contact_photo.png"
