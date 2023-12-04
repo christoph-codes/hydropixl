@@ -27,7 +27,7 @@ export default function About() {
 			<Section className="min-h-96 items-center">
 				<Flex className="mx-auto justify-centeritems-center flex-col sm:flex-row gap-20 mb-6">
 					<img
-						className="rounded-md w-full sm:w-1/2"
+						className="object-cover rounded-md w-full md:w-1/2 "
 						src="/contact_photo.png"
 						alt="Integrity"
 					/>
