@@ -2,8 +2,8 @@ import { Flex, Heading } from "@radix-ui/themes";
 import Section from "./Section";
 
 export interface IPageHeader {
-	title?: string;
-	description?: string;
+	title: string;
+	description: string;
 	imgSrc?: string;
 	imgAlt?: string;
 }
@@ -22,7 +22,9 @@ const PageHeader = ({
 					{title}
 				</Heading>
 				<p className="mb-6">{description}</p>
-				<img className="rounded-md" src={imgSrc} alt={imgAlt} />
+				{imgSrc && imgAlt && (
+					<img className="rounded-md" src={imgSrc} alt={imgAlt} />
+				)}
 			</Flex>
 		</Section>
 	);
