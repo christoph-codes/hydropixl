@@ -25,15 +25,15 @@ export const navLinks: TLink[] = [
 		children: [
 			{
 				label: "Irrigation Services",
-				href: "/servcies/irrigation",
+				href: "/services/irrigation",
 			},
 			{
 				label: "Landscape Design Services",
-				href: "/servcies/landscape-design",
+				href: "/services/landscape-design",
 			},
 			{
 				label: "Consulting Services",
-				href: "/servcies/consulting",
+				href: "/services/consulting",
 			},
 		],
 	},
