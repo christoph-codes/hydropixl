@@ -1,6 +1,6 @@
 import { Flex, Popover, Text } from "@radix-ui/themes";
 import { Link } from "@remix-run/react";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import type { TLink } from "utils/navLinks";
 
 export interface IDropdown {
@@ -26,13 +26,15 @@ const Dropdown = ({ triggerLabel, links }: IDropdown) => {
 					{links &&
 						links.map((item) => {
 							return (
-								item.href && (
-									<Link key={item.href} to={item.href}>
-										<Text className="font-bold cursor-pointer hover:text-tertiary focus:text-tertiary transition-colors">
-											{item.label}
-										</Text>
-									</Link>
-								)
+								<Fragment key={item.label}>
+									{item.href && (
+										<Link key={item.href} to={item.href}>
+											<Text className="font-bold cursor-pointer hover:text-tertiary focus:text-tertiary transition-colors">
+												{item.label}
+											</Text>
+										</Link>
+									)}
+								</Fragment>
 							);
 						})}
 				</Flex>
