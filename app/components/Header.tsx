@@ -39,7 +39,11 @@ const Header = () => {
 									{link.label}
 								</Link>
 							) : (
-								<Dropdown triggerLabel={link.label} links={link.children} />
+								<Dropdown
+									key={link.label}
+									triggerLabel={link.label}
+									links={link.children}
+								/>
 							);
 						})}
 					</Flex>

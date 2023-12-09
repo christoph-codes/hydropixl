@@ -47,12 +47,12 @@ export default function Index() {
 					<FlexCard
 						imgUrl="/landscape.png"
 						label="Landscape Designs"
-						link="/services/landscape-designs"
+						link="/services/landscape-design"
 					/>
 					<FlexCard
 						imgUrl="/consulting.png"
-						label="Consultations"
-						link="/services/consultations"
+						label="Consulting"
+						link="/services/consulting"
 					/>
 				</Flex>
 			</Section>
