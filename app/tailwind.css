@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-p {
+p, li {
 	color: #227295;
+	font-size: 18px;
+}
+li {
+	list-style-type: disc;
+	margin-left: 2rem;
 }

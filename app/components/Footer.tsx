@@ -18,7 +18,10 @@ const Footer = () => {
 							{navLinks.map(
 								(link) =>
 									link.href && (
-										<li key={link.href} className="list-none mb-0">
+										<li
+											key={link.href}
+											className="list-none mb-0 hover:text-tertiary font-bold transition-colors"
+										>
 											<Link to={link.href}>{link.label}</Link>
 										</li>
 									)

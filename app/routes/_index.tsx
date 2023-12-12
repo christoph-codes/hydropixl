@@ -1,5 +1,5 @@
 import { Flex, Grid, Heading, Text } from "@radix-ui/themes";
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "@vercel/remix";
 import PageLayout from "~/templates/PageLayout/PageLayout";
 import Button from "~/components/Button";
 import Section from "~/components/Section";
@@ -47,12 +47,12 @@ export default function Index() {
 					<FlexCard
 						imgUrl="/landscape.png"
 						label="Landscape Designs"
-						link="/services/landscape-designs"
+						link="/services/landscape-design"
 					/>
 					<FlexCard
 						imgUrl="/consulting.png"
-						label="Consultations"
-						link="/services/consultations"
+						label="Consulting"
+						link="/services/consulting"
 					/>
 				</Flex>
 			</Section>
