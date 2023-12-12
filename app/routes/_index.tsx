@@ -1,5 +1,5 @@
 import { Flex, Grid, Heading, Text } from "@radix-ui/themes";
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "@vercel/remix";
 import PageLayout from "~/templates/PageLayout/PageLayout";
 import Button from "~/components/Button";
 import Section from "~/components/Section";

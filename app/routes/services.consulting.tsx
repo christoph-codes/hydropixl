@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "@vercel/remix";
 import { servicesContent } from "utils/servicesContent";
 import ServicesLayout from "~/templates/ServicesLayout";
 
